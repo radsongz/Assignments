@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@600&family=Karla:ital,wght@0,700;1,300&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@500;700&family=Lexend+Deca&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "lexend-deca", sans-serif;
+}
+:root {
+  --Brightorange: hsl(31, 77%, 52%);
+  --Darkcyan: hsl(184, 100%, 22%);
+  --Verydarkcyan: hsl(179, 100%, 13%);
+  --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+  --Verylightgraybackground: hsl(0, 0%, 95%);
+}
+
+html {
+  font-size: 60.5%;
+}
+
+body {
+  background-color: var(--Verylightgraybackground);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 900px;
+  height: 480px;
+  display: flex;
+  margin: auto;
+}
+
+.sedans {
+  width: 50%;
+  height: 95%;
+  background-color: var(--Brightorange);
+  border-bottom-left-radius: 0.6rem;
+  border-top-left-radius: 0.6rem;
+}
+
+h1 {
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--Verylightgraybackground);
+}
+
+.container img {
+  width:70px;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.container p {
+  padding-left: 3rem;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 4rem;
+  line-height: 3rem;
+  color: var(--Transparentwhite);
+}
+
+.suv {
+  width: 50%;
+  height: 95%;
+  background-color: var(--Darkcyan);
+}
+
+.lux {
+  width: 50%;
+  height: 95%;
+  background-color: var(--Verydarkcyan);
+  border-bottom-right-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+}
+
+.btn1 {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: var(--Verylightgraybackground);
+  color: var(--Brightorange);
+  border: none;
+  padding-right: 0.3rem;
+  width: 38%;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.btn2 {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: var(--Verylightgraybackground);
+  color: var(--Darkcyan);
+  border: none;
+  padding-right: 0.3rem;
+  width: 38%;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.btn3 {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: var(--Verylightgraybackground);
+  color: var(--Verydarkcyan);
+  border: none;
+  padding-right: 0.3rem;
+  width: 38%;
+  margin-left: 30px;
+}
+
+.grid{
+  background-color: var(--Verydarkcyan);
+  color: var(--Transparentwhite);
+  border: none;
+  border-radius: 6px;
+  width: 15%;
+  height: 40px;
+  font-size: 18px;
+  position: absolute;
+  bottom:10px;
+  left:45%;
+  font-weight: bold; 
+}
+
+.grid a{
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 730px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 400px;
+  }
+
+  .container img {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  .container h1 {
+    margin-top: -20px;
+    margin-left: 0px;
+  }
+
+  .container p {
+    margin-bottom: -15px;
+    margin-top: -22px;
+    font-size: 14px;
+  }
+
+  .btn1 {
+    font-size: 14px;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 50%;
+    font-weight: bold;
+  }
+
+  .btn2 {
+    font-size: 14px;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 50%;
+    font-weight: bold;
+  }
+
+  .btn3 {
+    font-size: 14px;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 50%;
+    font-weight: bold;
+  }
+
+  .sedans {
+    border-bottom-left-radius: 0.6rem;
+    border-top-left-radius: 0.6rem;
+    margin-top: 35px;
+  }
+
+  .lux {
+    border-bottom-left-radius: 0.6rem;
+    border-top-left-radius: 0.5rem;
+    margin-top: -3px;
+    margin-bottom: 35px;
+  }
+
+  .grid{
+      position:fixed;
+      left:10px;
+      top: 57px;
+      width:20%;
+  }
+}
